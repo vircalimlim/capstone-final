@@ -130,7 +130,7 @@
 
         <td class="p-2">{{ releasemed.med_name }}</td>
 
-        <td v-for="pivot in releasemed.profile" :key="pivot.pivot.id"  class="p-2">{{ pivot.pivot.quantity }}</td>
+        
 
         <td class="p-2">{{ releasemed.date_received }}</td>
         
