@@ -56467,6 +56467,14 @@ var render = function() {
                               _vm._v(_vm._s(releasemed.med_name))
                             ]),
                             _vm._v(" "),
+                            _vm._l(releasemed.profile, function(pivot) {
+                              return _c(
+                                "td",
+                                { key: pivot.pivot.id, staticClass: "p-2" },
+                                [_vm._v(_vm._s(pivot.pivot.quantity))]
+                              )
+                            }),
+                            _vm._v(" "),
                             _c("td", { staticClass: "p-2" }, [
                               _vm._v(_vm._s(releasemed.date_received))
                             ])

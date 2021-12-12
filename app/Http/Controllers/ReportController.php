@@ -18,11 +18,7 @@ class ReportController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        Carbon::setWeekStartsAt(Carbon::SUNDAY);
-        Carbon::setWeekEndsAt(Carbon::SATURDAY);
-    }
+    
 
 
     public function index()
