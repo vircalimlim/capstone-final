@@ -73,13 +73,13 @@
 
       <tr v-for="medicine in pageOfItems" :key="medicine.id">
         
-        <td class="p-2 text-lowercase">{{ medicine.med_name }}</td>
+        <td class="p-2 text-capitalize">{{ medicine.med_name }}</td>
         
-        <td class="p-2 text-lowercase">{{ medicine.med_type }}</td>
+        <td class="p-2 text-capitalize">{{ medicine.med_type }}</td>
         
-        <td class="p-2 text-lowercase">{{ medicine.quantity }}</td>
+        <td class="p-2 text-capitalize">{{ medicine.quantity }}</td>
 
-        <td class="p-2 text-lowercase">{{ medicine.date_received }}</td>
+        <td class="p-2 text-capitalize">{{ medicine.date_received }}</td>
 
         <td :class="{'d-none': objUser.name !== 'admin'}" class="p-2 text-lowercase"><a class="text-danger" :href="'/medicine/' + medicine.id + '/edit'">edit</a></td>
         

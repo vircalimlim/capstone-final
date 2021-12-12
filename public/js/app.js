@@ -55007,19 +55007,19 @@ var render = function() {
               _vm._v(" "),
               _vm._l(_vm.pageOfItems, function(medicine) {
                 return _c("tr", { key: medicine.id }, [
-                  _c("td", { staticClass: "p-2 text-lowercase" }, [
+                  _c("td", { staticClass: "p-2 text-capitalize" }, [
                     _vm._v(_vm._s(medicine.med_name))
                   ]),
                   _vm._v(" "),
-                  _c("td", { staticClass: "p-2 text-lowercase" }, [
+                  _c("td", { staticClass: "p-2 text-capitalize" }, [
                     _vm._v(_vm._s(medicine.med_type))
                   ]),
                   _vm._v(" "),
-                  _c("td", { staticClass: "p-2 text-lowercase" }, [
+                  _c("td", { staticClass: "p-2 text-capitalize" }, [
                     _vm._v(_vm._s(medicine.quantity))
                   ]),
                   _vm._v(" "),
-                  _c("td", { staticClass: "p-2 text-lowercase" }, [
+                  _c("td", { staticClass: "p-2 text-capitalize" }, [
                     _vm._v(_vm._s(medicine.date_received))
                   ]),
                   _vm._v(" "),

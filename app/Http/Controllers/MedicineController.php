@@ -102,7 +102,7 @@ class MedicineController extends Controller
           'date_received' => 'required',
           ]);
  
-        Medicine::create($data);
+        Medicine::create(array_map('strtolower', $data));
         return redirect('medicine/create')->with('success', 'Saved');
     }
 
