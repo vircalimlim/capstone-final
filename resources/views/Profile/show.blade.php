@@ -296,7 +296,7 @@
     @endif
 
  
-  @can('update', $profile)
+  
   <div class="text-right">
     <div class="d-inline p-2">
       <a href="/profile/{{$profile->id}}/edit" role="button" class="btn btn-outline-success font-weight-bold py-2 px-4">Edit</a>
@@ -310,12 +310,12 @@
       </form>
     </div>
   </div>
-  @endcan
+  
   
   </div>
 
 </div>
-@can('update', $profile)
+
 <div class="col-12 col-md-4">
   <div class="row px-md-2 py-2 py-md-0">
   <div class="col-12 border shadow-sm bg-white pb-4 rounded text-secondary">
@@ -402,7 +402,7 @@
   </div>
   </div>
 </div>
-@endcan
+
 
 </div>
 

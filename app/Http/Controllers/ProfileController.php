@@ -167,7 +167,7 @@ class ProfileController extends Controller
      */
     public function update(Request $request, Profile $profile)
     {
-      $this->authorize('update', $profile);
+      //$this->authorize('update', $profile);
        $dataOfProfile = request()->validate([
         'houseNum' => 'required|numeric',
         'firstname' => 'required|string|max:150|min:2',
