@@ -70,7 +70,7 @@ class MedicineController extends Controller
                 ->orWhere('lastname', 'ilike', '%'.$search.'%');
     });*/
   
-    return Medicine::where('med_name', 'like', '%'.$search.'%')->get();
+    return Medicine::where('med_name', 'ilike', '%'.$search.'%')->get();
    // return "hell";
       
       }

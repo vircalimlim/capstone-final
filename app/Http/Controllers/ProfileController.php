@@ -78,7 +78,7 @@ class ProfileController extends Controller
               ->orWhere('lastname', 'ilike', '%'.$search.'%');
   });*/
 
-  return Profile::where('fullname', 'like', '%'.$search.'%')->get();
+  return Profile::where('fullname', 'ilike', '%'.$search.'%')->get();
  // return "hell";
     
     }
